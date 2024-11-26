@@ -1,0 +1,26 @@
+サイズ変更の方法
+
+※超軽量ミラーのサイズを変更したい場合
+
+・Mirror_QuestのTransformを弄るだけだと、映る像の位置・アスペクト比もズレてしまいます。
+そのため、サイズを変更したい場合は以下の調整を行う必要があります。
+
+①サイズ確認用の適当なObject（お好きなアバターのfbxでも、UnityのCubeでもよい）をUnity Editor上でミラーの前に置き、
+そのObjectのLayerを「Default」から「Local」に変更する。
+この状態で、非表示になっているMirror_Questをオンにすると、このObjectがミラーに映し出されます。
+
+②-1 サイズの縮小＆拡大のみ行いたい場合
+
+Mirror_Quest/RenderTextureのTransformを自由に変更
+→ その後、Mirror_Quest/Cameraの「Size」をデフォルトの1.8より小さくする or 大きくする。
+
+②-2 アスペクト比を変更したい場合
+
+Mirror_Quest/RenderTextureのTransformを自由に変更
+→ その後、QuestMirrorフォルダ/Texフォルダ内の「Render_Q_mirror」テクスチャの「Size」をデフォルトの4096x2304から変更する。
+（e.g. 2倍横長にしたいなら8192x2304に変更）
+
+③ サイズとアスペクト比の両方を変更したい場合
+上述の②-1と②-2の手法を組み合わせて、サイズ確認用Objectと鏡の写像を見比べながら、お好みの大きさに調整してください。
+
+④Mirror_Questをオフにし、調整Objectを削除してアップロード

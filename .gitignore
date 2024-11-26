@@ -1,0 +1,14 @@
+# ファイルサイズがでかくなりそうな拡張子を登録してます
+# なんか不具合あれば消したりしてもいい
+# 100MBを超えるファイルを作るときはここに追記してGoogleドライブを使ってください
+# https://drive.google.com/drive/folders/1WJ7qiHQpGpQ9Onw7bKbYQ8wUeCk_Fxr5
+.zip
+.7zip
+.7z
+.psd
+.psb
+.clip
+.mp4
+.mkv
+.mov
+.unitypackage
